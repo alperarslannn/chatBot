@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  /* background-color: #80bc64; */
 }
 
 .App-logo {
@@ -7,21 +11,48 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+
+.chatBox{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.chatText{
+  text-align: left;
+  border-radius: 10px;
+  max-width: 70%;
+  min-width: 10%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  word-break: break-all;
+}
+
+.clientText{
+  margin-left: 0.5%;
+  background-color: red;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.serverText{
+  margin-right: 0.5%;
+  background-color: blue;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  align-self: flex-end;
 }
 
 .App-link {
