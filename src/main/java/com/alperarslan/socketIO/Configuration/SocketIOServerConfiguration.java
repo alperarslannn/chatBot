@@ -30,29 +30,6 @@ public class SocketIOServerConfiguration {
 
         server.start();
 
-
-       /*server.addConnectListener(new ConnectListener() {
-            @Override
-            public void onConnect(SocketIOClient socketIOClient) {
-                System.out.println("Client Connected " + socketIOClient.getSessionId());
-            }
-        });
-
-        server.addDisconnectListener(new DisconnectListener() {
-            @Override
-            public void onDisconnect(SocketIOClient socketIOClient) {
-                System.out.println("Client disconnected: " + socketIOClient.getSessionId());
-            }
-        });*/
-
-        /*server.addEventListener("chat", String.class, new DataListener<String>() {
-            @Override
-            public void onData(SocketIOClient socketIOClient, String message, AckRequest ackRequest) throws Exception {
-                server.getBroadcastOperations().sendEvent("chat", socketIOClient, message);
-                System.out.println(message);
-            }
-        });*/
-
         return server;
     }
 
