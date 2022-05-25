@@ -1,7 +1,7 @@
-
 .App {
   text-align: center;
 }
+
 body{
   background-color: #ffe5ec;
   opacity: .8;
@@ -13,21 +13,14 @@ body{
   src: url(/public/BalooDa2-VariableFont_wght.ttf);
 }
 
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
-  
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: #b388eb;
 }
 
 .chatContainer{
@@ -45,8 +38,8 @@ body{
 .chatText{
   text-align: left;
   border-radius: 10px;
-  max-width: 70%;
-  min-width: 10%;
+  max-width: 75%;
+  min-width: 1%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
   padding-left: 2%;
@@ -59,6 +52,7 @@ body{
   background-color: #f1c0e8;
   padding-top: 1%;
   padding-bottom: 1%;
+  align-self: baseline;
 }
 
 .clientText{
@@ -69,15 +63,39 @@ body{
   align-self: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.textFieldCustom{
+  width: 60%; 
+  height:48px;
+  flex-grow: 3;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textFieldCustom:focus{
+  border: none;
+  outline: 2px solid #b388eb;
+}
+
+/*ScrollBar*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 4px;
+  outline: 1px solid grey;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffe5ec; 
+  border-radius: 4px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #fcd4e0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc9d9; 
 }
