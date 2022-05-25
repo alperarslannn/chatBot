@@ -10,7 +10,6 @@ const socket = io.connect('http://localhost:8000');
 function App() {
 
   const [message, setMessage] = useState('');
-  //const [userTyping, setUserTyping] = useState(false);
 
   let sendMessageWithEnter = (e) => {
     if(e.keyCode === 13){
@@ -41,29 +40,6 @@ function App() {
 
 
   let getBotAnswer = () => {
-    // socket.on("connection", (socket) => {
-    //   console.log("succeed");
-    //   socket.emit("frontendSaysHi");
-    // });
-
-    //socket.emit("chat","HelloWorld");
-
-    // function waitForUserToStopSendingMessages(message, callback){
-    //   if(userTyping === true){
-    //     setUserTyping(false);
-    //   }
-    //   else if(userTyping === false){
-    //     setTimeout(callback, 1000);
-    //   }
-    //   console.log(message);
-    // }
-
-    // waitForUserToStopSendingMessages("HelloWorld",function(){
-    //   setUserTyping(userTyping => {
-    //     socket.emit("chat","HelloWorld");
-    //     return true;
-    //   });
-    // });
 
     socket.emit("chat","HelloWorld");
 
